@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Restaurant menu</title>
+    <script src="./main.js" type="module" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header-title">
+        Jimmy’s Diner
+      </h1>
+      <p class="header-text">
+        The best burgers and pizzas in town.
+      </p>
+    </header>
+    <main id="main">
+      <div class="menu-container" id="menu-container"></div>
+      <div class="total-order-container" id="total-order"></div>
+      <div class="modal" id="modal">
+        <button
+          class="modal-close-btn"
+          id="modal-close-btn"
+          type="button"
+        >
+          X
+        </button>
+        <h4 class="modal-title">Enter card details</h4>
+        <form class="form" id="form">
+          <label for="input-name" class="modal-label">Enter you name</label>
+          <input
+            class="modal-input input-name"
+            type="text"
+            name="input-name"
+            id="input-name"
+            placeholder="Enter you name"
+            required
+          >
+          <label for="input-card" class="modal-label">Enter card number</label>
+          <input
+            class="modal-input input-card"
+            type="password"
+            name="input-card"
+            id="input-card"
+            placeholder="Enter card number"
+            required
+          >
+          <label for="input-cvv" class="modal-label">Enter CVV</label>
+          <input
+            class="modal-input input-cvv"
+            type="password"
+            name="input-cvv"
+            id="input-cvv"
+            placeholder="Enter CVV"
+            required
+          >
+          <button class="modal-btn" id="modal-btn" type="submit">
+            Pay
+          </button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
